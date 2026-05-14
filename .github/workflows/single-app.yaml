@@ -12,7 +12,7 @@ jobs:
       - name: Setup PSE
         uses: invisirisk/pse-action@feature/intermediate-deno-rust-ca-devtest
         with:
-          api_url: "https://app.dev.invisirisk.com"
+          api_url: "https://app.stage.invisirisk.com"
           app_token: ${{ secrets.IR_API_KEY }}
           pse_image_tag: "dev-test"
           debug: true
@@ -40,6 +40,6 @@ jobs:
         if: always()
         uses: invisirisk/pse-action@feature/intermediate-deno-rust-ca-devtest
         with:
-          api_url: "https://app.dev.invisirisk.com"
+          api_url: "https://app.stage.invisirisk.com"
           cleanup: "true"
       # ============= InvisiRisk Cleanup End =============
